@@ -5,7 +5,7 @@ import {
   UtensilsCrossed, 
   Car, 
   Dumbbell, 
-  Pool, 
+  Waves, 
   Flower2, 
   Wine, 
   Users, 
@@ -34,7 +34,7 @@ const amenitiesList = [
     description: "Modern equipment for your daily workout routine",
   },
   {
-    icon: <Pool className="h-8 w-8" />,
+    icon: <Waves className="h-8 w-8" />,
     title: "Swimming Pool",
     description: "Refreshing outdoor pool with lounging area",
   },
