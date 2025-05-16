@@ -13,7 +13,6 @@ import { Wifi, Coffee, Tv, Bath } from "lucide-react";
 
 interface RoomCardProps {
   title: string;
-  description: string;
   price: number;
   image: string;
   size: string;
@@ -26,7 +25,6 @@ interface RoomCardProps {
 
 const RoomCard: React.FC<RoomCardProps> = ({
   title,
-  description,
   price,
   image,
   size,
@@ -37,7 +35,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
   hasBathroom = true,
 }) => {
   return (
-    <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-standard h-full flex flex-col">
+    <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-standard h-full flex flex-col bg-gradient-to-br from-red-600 to-black text-white">
       <div className="relative h-64 overflow-hidden">
         <img
           src={image}
@@ -49,35 +47,34 @@ const RoomCard: React.FC<RoomCardProps> = ({
         </div>
       </div>
       <CardHeader>
-        <CardTitle className="hotel-heading text-2xl">{title}</CardTitle>
-        <CardDescription className="flex justify-between text-gray-600">
+        <CardTitle className="hotel-heading text-2xl text-white">{title}</CardTitle>
+        <CardDescription className="flex justify-between text-gray-300">
           <span>{size}</span>
           <span>{capacity}</span>
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-gray-600 mb-4">{description}</p>
         <div className="flex space-x-4 mt-4">
           {hasWifi && (
-            <div className="flex items-center text-gray-500" title="Free WiFi">
+            <div className="flex items-center text-gray-300" title="Free WiFi">
               <Wifi className="h-4 w-4 mr-1" />
               <span className="text-xs">WiFi</span>
             </div>
           )}
           {hasBreakfast && (
-            <div className="flex items-center text-gray-500" title="Breakfast Included">
+            <div className="flex items-center text-gray-300" title="Breakfast Included">
               <Coffee className="h-4 w-4 mr-1" />
               <span className="text-xs">Breakfast</span>
             </div>
           )}
           {hasTV && (
-            <div className="flex items-center text-gray-500" title="Smart TV">
+            <div className="flex items-center text-gray-300" title="Smart TV">
               <Tv className="h-4 w-4 mr-1" />
               <span className="text-xs">Smart TV</span>
             </div>
           )}
           {hasBathroom && (
-            <div className="flex items-center text-gray-500" title="Private Bathroom">
+            <div className="flex items-center text-gray-300" title="Private Bathroom">
               <Bath className="h-4 w-4 mr-1" />
               <span className="text-xs">Bathroom</span>
             </div>
@@ -85,7 +82,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="btn-primary w-full">Book Now</Button>
+        <Button className="bg-hotel-gold hover:bg-yellow-600 text-white w-full">Book Now</Button>
       </CardFooter>
     </Card>
   );

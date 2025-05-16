@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-hotel text-white">
+    <footer className="bg-gradient-to-br from-red-900 to-black text-white">
       <div className="container mx-auto container-padding py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Hotel Info */}
@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
             </h3>
             <p className="mb-6 text-sm opacity-80">
-              Experience luxury and comfort at Dotmot Hotel and Suite, where exceptional service and elegant accommodations await.
+              Your comfort, our priority. Experience luxury and comfort at Dotmot Hotel and Suite, where exceptional service and elegant accommodations await.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-hotel-gold transition-standard">
@@ -39,18 +39,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-hotel-gold shrink-0 mt-0.5" />
-                <span className="text-sm">123 Luxury Avenue, City Center, Country, 12345</span>
+                <span className="text-sm">Along Ifaki Omuo Road, Ikole-Ekiti, Ekiti State</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-hotel-gold shrink-0" />
-                <a href="tel:+1234567890" className="text-sm hover:text-hotel-gold transition-standard">
-                  +123 456 7890
+                <a href="tel:+2348131367488" className="text-sm hover:text-hotel-gold transition-standard">
+                  +2348131367488
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-hotel-gold shrink-0" />
-                <a href="mailto:info@dotmothotel.com" className="text-sm hover:text-hotel-gold transition-standard">
-                  info@dotmothotel.com
+                <a href="mailto:dotmotsuites@gmail.com" className="text-sm hover:text-hotel-gold transition-standard">
+                  dotmotsuites@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
