@@ -9,40 +9,25 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  // Updated room data with new names
+  // Updated room data with new names and prices in Naira
   const rooms = [
     {
       title: "Deluxe Suite",
-      price: 150,
-      image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-      size: "32m²",
-      capacity: "2 Adults",
-      hasWifi: true,
-      hasBreakfast: true,
-      hasTV: true,
-      hasBathroom: true,
+      price: 25000,
+      image: "/lovable-uploads/9a702dd7-83c4-4913-b5b4-94b0a6f77167.png",
+      currency: "NGN",
     },
     {
       title: "Executive Suite",
-      price: 250,
-      image: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-      size: "48m²",
-      capacity: "2 Adults",
-      hasWifi: true,
-      hasBreakfast: true,
-      hasTV: true,
-      hasBathroom: true,
+      price: 27500,
+      image: "/lovable-uploads/01ca9988-5164-4f50-a0aa-9d14cabb46c6.png",
+      currency: "NGN",
     },
     {
       title: "Royal Executive Suite",
-      price: 320,
-      image: "https://images.unsplash.com/photo-1598928636135-d146006ff4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      size: "65m²",
-      capacity: "4 Adults",
-      hasWifi: true,
-      hasBreakfast: true,
-      hasTV: true,
-      hasBathroom: true,
+      price: 30000,
+      image: "/lovable-uploads/ab7dc2ab-460e-43f1-ba13-7697e587f65e.png",
+      currency: "NGN",
     },
   ];
 
@@ -72,23 +57,23 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Hotel Lobby"
+              src="/lovable-uploads/4124abc7-d80b-479a-a06f-3d5161861850.png"
+              alt="Hotel Reception"
               className="rounded-lg shadow-md w-full h-full object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Hotel Restaurant"
+              src="/lovable-uploads/3c70a17f-8932-460f-a79e-700b6cb7b873.png"
+              alt="Hotel Lounge"
               className="rounded-lg shadow-md w-full h-48 object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
-              alt="Hotel Pool"
+              src="/lovable-uploads/6068061e-af63-41a6-ac0b-71bdd41e480a.png"
+              alt="Hotel Staircase"
               className="rounded-lg shadow-md w-full h-48 object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Hotel Exterior"
+              src="/lovable-uploads/a35e670d-5c63-43e4-b07c-f0c4680c4068.png"
+              alt="Hotel Corridor"
               className="rounded-lg shadow-md w-full h-full object-cover"
             />
           </div>

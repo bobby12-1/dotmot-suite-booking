@@ -4,9 +4,6 @@ import {
   Wifi, 
   UtensilsCrossed, 
   Car, 
-  Dumbbell, 
-  Waves, 
-  Flower2, 
   Wine, 
   Users, 
   ShieldCheck 
@@ -27,21 +24,6 @@ const amenitiesList = [
     icon: <Car className="h-8 w-8" />,
     title: "Free Parking",
     description: "Convenient and secure on-site parking",
-  },
-  {
-    icon: <Dumbbell className="h-8 w-8" />,
-    title: "Fitness Center",
-    description: "Modern equipment for your daily workout routine",
-  },
-  {
-    icon: <Waves className="h-8 w-8" />,
-    title: "Swimming Pool",
-    description: "Refreshing outdoor pool with lounging area",
-  },
-  {
-    icon: <Flower2 className="h-8 w-8" />,
-    title: "Spa Services",
-    description: "Relaxing treatments and massages available",
   },
   {
     icon: <Wine className="h-8 w-8" />,
