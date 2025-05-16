@@ -20,7 +20,7 @@ const Index = () => {
     {
       title: "Executive Suite",
       price: 27500,
-      image: "/lovable-uploads/01ca9988-5164-4f50-a0aa-9d14cabb46c6.png",
+      image: "/lovable-uploads/4c146a77-5b1f-4618-b3a4-92021463035a.png",
       currency: "NGN",
     },
     {
